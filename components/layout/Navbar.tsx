@@ -12,9 +12,10 @@ export default function Navbar() {
             />
 
       <div className="flex gap-5 items-center">
-        <Link className="uppercase text-xs tracking-widest font-sans" href="/">Home</Link>
-        <Link className="uppercase text-xs tracking-widest font-sans" href="/about">About</Link>
-        <Link className="bg-accent uppercase text-xs tracking-widest font-sans py-2 px-5 rounded-3xl" href="/contact">Contact</Link>
+        <Link className="uppercase text-xs tracking-widest font-sans hover:text-accent transition-all" href="/">Home</Link>
+        <Link className="uppercase text-xs tracking-widest font-sans hover:text-accent transition-all" href="/about">About</Link>
+        <Link className="uppercase text-xs tracking-widest font-sans hover:text-accent transition-all" href="/cv">CV</Link>
+        <Link className="bg-accent uppercase text-xs tracking-widest font-sans py-2 px-5 rounded-3xl hover:bg-tags hover:text-accent transition-all" href="/contact">Contact</Link>
       </div>
     </div>
   );

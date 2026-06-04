@@ -3,6 +3,7 @@ import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { ProjectProvider } from "@/hooks/ProjectContext";
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -28,7 +29,9 @@ export default function RootLayout({
     <html lang="en" className={`${IBMmono.variable} h-full antialiased`}>
       <body className="bg-dark min-h-full">
         <Navbar />
-        <main>{children}</main>
+        <ProjectProvider>
+          <main>{children}</main>
+        </ProjectProvider>
         <Footer />
       </body>
     </html>
