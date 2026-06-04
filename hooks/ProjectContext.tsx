@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { createContext, ReactNode } from "react";
 import type { Project } from "@/types/ProjectType";
@@ -6,62 +6,63 @@ import type { Project } from "@/types/ProjectType";
 const projectContext = createContext<Project[]>([]);
 export default projectContext;
 
-export function ProjectProvider({children} : {children : ReactNode}){
+export function ProjectProvider({ children }: { children: ReactNode }) {
+  const projectData: Project[] = [
+    {
+      id: "AlienPlanets",
+      img: "/images/aliensplanets_start.png",
+      title: "Alien Planets",
+      tags: ["Full-stack", "React", "Tailwind CSS", "TypeScript"],
+      summary:
+        "Full-stack application created through an agile teamwork of 5 people.",
+      desc: "Assignment, Execution, Reflection.",
+    },
+    {
+      id: "TriviaApp",
+      img: "/images/app_mockup.png",
+      title: "Trivia App",
+      tags: ["App Development", "React Native", "Expo", "CSS", "TypeScript"],
+      summary:
+        "A trivia game made in React Native, using Expo go, and using The Trivia Api for trivia-questions.",
+      desc: "Assignment was to develop a mobile application inspired by a public API of choice. For this project I chose to work with The Trivia API (https://the-trivia-api.com/). The rules of the game are: Enter your name, and start quizzing. Pick your favorite category. Answer correctly and score points. Compete with your friends to see who scores the highest. The purpose of this project was to build an app using React Native, Expo and TypeScript. The app should be structured with expo router, using api calls and react hooks.",
+    },
+    {
+      id: "Kanban",
+      img: "/images/kanban_transmockup.png",
+      title: "Kanban Board",
+      tags: ["Frontend", "React", "JavaScript", "CSS"],
+      summary: "",
+      desc: "Assignment, Execution, Reflection.",
+    },
+    {
+      id: "Dashboard",
+      img: "/images/dashboard_transpmockup.png",
+      title: "Dashboard",
+      tags: ["Frontend", "HTML", "CSS", "Vanilla JS", "API-handling"],
+      summary: "",
+      desc: "Assignment, Execution, Reflection.",
+    },
+    {
+      id: "Master",
+      img: "/images/masterthesis_mockup.png",
+      title: "Master Thesis",
+      tags: ["Transition Design", "UX", "UI", "User Research", "Figma"],
+      summary: "",
+      desc: "Assignment, Execution, Reflection.",
+    },
+    {
+      id: "Bachelor",
+      img: "/images/bachelor.png",
+      title: "Bachelor Thesis",
+      tags: ["Interaction Design", "UX", "Gamification", "JustInMind"],
+      summary: "",
+      desc: "Assignment, Execution, Reflection.",
+    },
+  ];
 
-    const projectData: Project[] = [
-        {
-            id: "AlienPlanets",
-            img: "/images/aliensplanets_start.png",
-            title: "Alien Planets",
-            tags: ["React", "Tailwind CSS", "TypeScript", "Full-stack"],
-            summary:"",
-            desc:"",
-        },
-        {
-            id: "TriviaApp",
-            img: "/images/app_mockup.png",
-            title: "Trivia App",
-            tags: ["App Development", "React Native", "Expo", "CSS", "TypeScript"],
-            summary:"",
-            desc:"",
-        },
-        {
-            id: "Kanban",
-            img: "/images/kanban_transmockup.png",
-            title: "Kanban Board",
-            tags: ["React", "JavaScript", "CSS"],
-            summary:"",
-            desc:"",
-        },
-        {
-            id: "Dashboard",
-            img: "/images/dashboard_transpmockup.png",
-            title: "Dashboard",
-            tags: ["HTML", "CSS", "Vanilla JS", "API-handling"],
-            summary:"",
-            desc:"",
-        },
-        {
-            id: "Master",
-            img: "/images/masterthesis_mockup.png",
-            title: "Master Thesis",
-            tags: ["Transition Design", "UX", "UI", "User Research", "Figma"],
-            summary:"",
-            desc:"",
-        },
-        {
-            id: "Bachelor",
-            img: "/images/bachelor.png",
-            title: "Bachelor Thesis",
-            tags: ["Interaction Design", "UX", "Gamification", "JustInMind"],
-            summary:"",
-            desc:"",
-        }
-    ];
-
-    return (
-        <projectContext.Provider value={projectData}>
-        {children}
-        </projectContext.Provider>
-    );
+  return (
+    <projectContext.Provider value={projectData}>
+      {children}
+    </projectContext.Provider>
+  );
 }

@@ -1,53 +1,59 @@
-import type { Project } from "next/dist/build/swc/types";
+import type { Project } from "@/types/ProjectType";
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { XCircleIcon } from "@heroicons/react/16/solid";
 
-export default function ProjectModal({ project }:{ project: Project}) {
-
-
+export default function ProjectModal({
+  project,
+  onClose,
+}: {
+  project: Project;
+  onClose: () => void;
+}) {
   return (
-    <div className="ProjectModal">
-        <h2>{project.title}</h2>
-
-        <div className="modal" id="project1">
-          <div className="content">
-            <span className="close-modal">x</span>
-            <h2></h2>
-            <div className="tags">
-              <p>App Development</p>
-            </div>
-            <div className="text-content">
-              <Image
-                      width={300}
-                      height={300}
-                      src={project.img}
-                      alt="Emelie_profile_picture"
-                    />
-              <div>
-                <h3>Summary of project.</h3>
-              </div>
-            </div>
-            <div className="project-description">
-              <p>Assignment, Execution, Reflection.</p>
-              <ul>
-                <li>Teck Stack & Tools</li>
-                <li>list item</li>
-                <li>list item</li>
-              </ul>
-              <p>Assignment, Process, Reflection.</p>
-            </div>
+    <div className="ProjectModal bg-lighter p-10 relative">
+      <h2 className="text-center pb-3">{project.title}</h2>
+      <div>
+        <div className="content">
+          <XCircleIcon
+            className="w-5 h-5 close-modal text-xl hover:text-accent transition-all absolute top-4 right-4 cursor-pointer"
+            onClick={onClose}
+          />
+          <div className="tags flex flex-wrap gap-2 justify-center border-b-2 border-tags pb-5">
+            {project.tags.map((tag) => (
+              <p
+                key={tag}
+                className="bg-tags py-2 px-5 rounded-3xl text-[11px]"
+              >
+                {tag}
+              </p>
+            ))}
+          </div>
+          <div className="Summary flex justify-center items-center w-260 mx-auto">
+            <Image
+              width={500}
+              height={500}
+              src={project.img}
+              alt="Emelie_profile_picture"
+            />
             <div>
-              <Link
-          className="flex gap-2 items-center bg-accent w-70 justify-center uppercase text-xs tracking-widest font-sans py-3 px-5 border-2 border-accent hover:text-dark transition-all"
-          href="/"
-        >
-          GitHub <FontAwesomeIcon className="text-md" icon={faGithub} />
-        </Link>
+              <h3>{project.summary}</h3>
             </div>
           </div>
-    </div>
+          <div className="flex flex-col justify-center mx-auto gap-8 w-250">
+            <p>{project.desc}</p>
+            <Link
+              className="flex gap-2 items-center bg-lighter w-70 justify-center uppercase text-xs tracking-widest font-sans py-3 px-5 border-2 border-accent hover:text-dark hover:bg-accent transition-all"
+              href="/"
+            >
+              GitHub <FontAwesomeIcon className="text-md" icon={faGithub} />
+            </Link>
+          </div>
+          <div></div>
+        </div>
+      </div>
     </div>
   );
 }
