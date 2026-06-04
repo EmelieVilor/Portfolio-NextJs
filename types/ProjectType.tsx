@@ -5,4 +5,5 @@ export interface Project {
     tags: string[],
     summary: string,
     desc: string,
+    screenshots: string[]
 };

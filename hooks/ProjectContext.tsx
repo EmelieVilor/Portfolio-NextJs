@@ -16,6 +16,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       summary:
         "Full-stack application created through an agile teamwork of 5 people.",
       desc: "Assignment, Execution, Reflection.",
+      screenshots: [],
     },
     {
       id: "TriviaApp",
@@ -25,6 +26,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       summary:
         "A trivia game made in React Native, using Expo go, and using The Trivia Api for trivia-questions.",
       desc: "Assignment was to develop a mobile application inspired by a public API of choice. For this project I chose to work with The Trivia API (https://the-trivia-api.com/). The rules of the game are: Enter your name, and start quizzing. Pick your favorite category. Answer correctly and score points. Compete with your friends to see who scores the highest. The purpose of this project was to build an app using React Native, Expo and TypeScript. The app should be structured with expo router, using api calls and react hooks.",
+      screenshots: [],
     },
     {
       id: "Kanban",
@@ -33,6 +35,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       tags: ["Frontend", "React", "JavaScript", "CSS"],
       summary: "",
       desc: "Assignment, Execution, Reflection.",
+      screenshots: [],
     },
     {
       id: "Dashboard",
@@ -41,6 +44,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       tags: ["Frontend", "HTML", "CSS", "Vanilla JS", "API-handling"],
       summary: "",
       desc: "Assignment, Execution, Reflection.",
+      screenshots: [],
     },
     {
       id: "Master",
@@ -49,6 +53,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       tags: ["Transition Design", "UX", "UI", "User Research", "Figma"],
       summary: "",
       desc: "Assignment, Execution, Reflection.",
+      screenshots: [],
     },
     {
       id: "Bachelor",
@@ -57,6 +62,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       tags: ["Interaction Design", "UX", "Gamification", "JustInMind"],
       summary: "",
       desc: "Assignment, Execution, Reflection.",
+      screenshots: [],
     },
   ];
 
