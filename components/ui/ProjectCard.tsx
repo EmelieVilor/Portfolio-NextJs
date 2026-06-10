@@ -10,7 +10,7 @@ export default function ProjectCard({ project, onClick }: { project: Project; on
       <h2>{project.title}</h2>
       <div className="tags flex flex-wrap gap-2 mt-3 justify-center">
         {project.tags.map((tag) => (
-          <p key={tag} className="bg-tags py-2 px-5 rounded-3xl text-[11px]">
+          <p key={tag} className="bg-tags py-2 px-5 rounded-3xl text-[12px]">
             {tag}
           </p>
         ))}

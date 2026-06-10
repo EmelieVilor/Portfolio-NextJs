@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${IBMmono.variable} h-full antialiased`}>
-      <body className="bg-dark min-h-full">
+      <body className="bg-dark min-h-full pattern">
         <Navbar />
         <ProjectProvider>
           <main>{children}</main>

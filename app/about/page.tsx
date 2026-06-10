@@ -2,13 +2,14 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="About flex justify-center gap-5 items-center w-280 mx-auto">
+    <div className="About flex justify-center gap-10 items-center w-280 mx-auto h-screen">
       <Image
         style={{ borderRadius: "43% 57% 32% 68% / 50% 60% 40% 50%" }}
         width={300}
         height={300}
-        src="/images/bild4_svartvit.jpg"
+        src="/images/Emelie2.jpg"
         alt="Emelie_about_picture"
+        className="object-contain"
       />
       <div className="text-center">
         <h2>More About Me!</h2>

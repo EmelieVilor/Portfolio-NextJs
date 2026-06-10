@@ -14,9 +14,9 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       title: "Alien Planets",
       tags: ["Full-stack", "React", "Tailwind CSS", "TypeScript"],
       summary:
-        "Full-stack application created through an agile teamwork of 5 people.",
+        "Full-stack application for exploring different kinds of planets and their inhabitants. \n\n Executed through an agile teamwork of 5 people.",
       desc: "Assignment, Execution, Reflection.",
-      screenshots: [],
+      screenshots: ["/images/aliensframe1.png", "/images/aliensframe2.png", "/images/aliensframe3.png", "/images/aliensframe4.png"],
     },
     {
       id: "TriviaApp",
@@ -25,8 +25,8 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       tags: ["App Development", "React Native", "Expo", "CSS", "TypeScript"],
       summary:
         "A trivia game made in React Native, using Expo go, and using The Trivia Api for trivia-questions.",
-      desc: "Assignment was to develop a mobile application inspired by a public API of choice. For this project I chose to work with The Trivia API (https://the-trivia-api.com/). The rules of the game are: Enter your name, and start quizzing. Pick your favorite category. Answer correctly and score points. Compete with your friends to see who scores the highest. The purpose of this project was to build an app using React Native, Expo and TypeScript. The app should be structured with expo router, using api calls and react hooks.",
-      screenshots: [],
+      desc: "Assignment was to develop a mobile application inspired by a public API of choice, and for this project I chose to work with The Trivia API (https://the-trivia-api.com/).\n\nRules of the game are: Enter your name, and start quizzing. Pick your favorite category. Answer correctly and score points. Compete with your friends to see who scores the highest.\n\nThe purpose of this project was to build an app using React Native, Expo and TypeScript. The app should be structured with expo router, using api calls and react hooks.",
+      screenshots: ["/images/app_mockup.png", "/images/bachelor.png"],
     },
     {
       id: "Kanban",
@@ -51,7 +51,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       img: "/images/masterthesis_mockup.png",
       title: "Master Thesis",
       tags: ["Transition Design", "UX", "UI", "User Research", "Figma"],
-      summary: "",
+      summary: "Transitioning into a sustainable collaboration in the industrial harbor of Malmö. My master thesis project that I created in collaboration with Afry.",
       desc: "Assignment, Execution, Reflection.",
       screenshots: [],
     },
@@ -60,7 +60,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       img: "/images/bachelor.png",
       title: "Bachelor Thesis",
       tags: ["Interaction Design", "UX", "Gamification", "JustInMind"],
-      summary: "",
+      summary: "For my bachelor project in Interaction Design I wanted to explore tourism and gamification. Therefore, I designed a prototype that would encourage exploration and city interaciton.",
       desc: "Assignment, Execution, Reflection.",
       screenshots: [],
     },

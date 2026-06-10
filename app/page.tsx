@@ -5,9 +5,11 @@ import Projects from "@/components/ui/Projects";
 export default function Home() {
   return (
     <div className="HomePage">
-      <Header/>
-      <Skills/>
-      <Projects/>
+      <Header />
+      <Skills />
+      <section id="projects">
+        <Projects />
+      </section>
     </div>
   );
 }
