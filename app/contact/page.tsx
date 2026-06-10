@@ -1,6 +1,5 @@
 import EmailForm from "@/components/ui/EmailForm";
 import Image from "next/image";
-import Form from "next/form";
 
 export default function Contact() {
   return (
@@ -16,16 +15,7 @@ export default function Contact() {
       </div>
       <div>
         <h2>Let's work together!</h2>
-        <h2>Send me a message.</h2>
-        <div className="h-90 w-70 bg-lighter mt-5">
-          <Form>
-            <input></input>
-            <button type="submit">Send Message!</button>
-          </Form>
-
-          <p></p>
-          <p></p>
-        </div>
+        <h2>Get in touch using the form below.</h2>
         <EmailForm />
       </div>
     </div>
