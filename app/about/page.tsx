@@ -37,14 +37,14 @@ export default function About() {
             design and web development is the ability to design and build useful
             products and services that can inspire behavioral change. <br />
             <br />
-            Based in Malmö and I live with my wife and our two children. In my
+            Born and raised in Malmö, Sweden, and that is where I live with my wife and our two children. In my
             spare time I like to meet with friends and family, play board games
-            or find fun home decor at Facebook Marketplace.
+            or hunt for fun home decor at Facebook Marketplace.
           </p>
           <img
             src="/images/svg/Dator.svg"
             alt="favicon"
-            className="object-contain h-[290px] w-[290px] absolute -right-[15vw] -bottom-[20vh] sway"
+            className="object-contain h-[290px] w-[290px] absolute -right-[15vw] -bottom-[25vh] sway"
           />
         </div>
       </div>

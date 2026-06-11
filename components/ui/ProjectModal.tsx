@@ -44,22 +44,37 @@ export default function ProjectModal({
           </div>
           <div className="flex flex-col justify-center items-center gap-8 text-center">
             <div className="flex gap-5 items-center">
-            <p className="whitespace-pre-line">{project.desc}</p>
-            <div className="grid grid-cols-2 justify-center w-120">
-              {project.screenshots.map((img, index)=>(
-              <Image key={index} width={400} height={200} src={img} alt={project.title} className="w-full h-auto"/>
-            ))}
+              <p className="whitespace-pre-line">{project.desc}</p>
+              <div className="grid grid-cols-2 justify-center w-120">
+                {project.screenshots.map((img, index) => (
+                  <Image
+                    key={index}
+                    width={400}
+                    height={200}
+                    src={img}
+                    alt={project.title}
+                    className="w-full h-auto"
+                  />
+                ))}
+              </div>
             </div>
-            </div>
-            <Link
-              className="flex gap-2 items-center bg-lighter w-70 justify-center uppercase text-xs tracking-widest font-sans py-3 px-5 border-2 border-accent hover:text-dark hover:bg-accent transition-all"
-              href="/"
-            >
-              GitHub <FontAwesomeIcon className="text-md" icon={faGithub} />
-            </Link>
+            {project.githublink && (
+              <Link
+                className="flex gap-2 items-center bg-lighter w-70 justify-center uppercase text-xs tracking-widest font-sans py-3 px-5 border-2 border-accent hover:text-dark hover:bg-accent transition-all"
+                href={project.githublink}
+              >
+                GitHub <FontAwesomeIcon className="text-md" icon={faGithub} />
+              </Link>
+            )}
+            {project.downloadlink && (
+              <Link
+                className="flex gap-2 items-center bg-lighter w-70 justify-center uppercase text-xs tracking-widest font-sans py-3 px-5 border-2 border-accent hover:text-dark hover:bg-accent transition-all"
+                href={project.downloadlink}
+              >
+                GitHub <FontAwesomeIcon className="text-md" icon={faGithub} />
+              </Link>
+            )}
           </div>
-
-          <div></div>
         </div>
       </div>
     </div>

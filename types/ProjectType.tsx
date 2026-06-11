@@ -6,5 +6,6 @@ export interface Project {
     summary: string,
     desc: string,
     screenshots: string[],
-    link: string,
+    githublink?: string,
+    downloadlink?: string,
 };

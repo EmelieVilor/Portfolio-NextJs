@@ -49,7 +49,7 @@ export default function Header() {
       <img
         src="/images/svg/Hand.svg"
         alt="favicon"
-        className="object-contain h-[350px] w-[350px] absolute -bottom-[7vh] -right-[2vw] sway overflow-hidden"
+        className="object-contain h-[350px] w-[350px] absolute -bottom-[7vh] -right-[2vw] wave overflow-hidden"
       />
     </div>
   );
