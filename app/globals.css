@@ -79,7 +79,15 @@ html, body{
 }
 
 .sway {
-  animation: sway 2s ease-in-out infinite;
+  animation: sway 2s ease-out infinite;
+}
+
+@keyframes skills {
+   from { width:0 }
+}
+
+.skills{
+  animation: skills 2s ease-in-out forwards;
 }
 }
 

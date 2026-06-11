@@ -7,7 +7,7 @@ export default function Navbar() {
         <img
           src="/images/svg/Logga.svg"
           alt="favicon"
-          className="object-contain h-[75px] w-[75px]"
+          className="object-contain h-[75px] w-[75px] hover:rotate-3 transition-all"
         />
       </Link>
 

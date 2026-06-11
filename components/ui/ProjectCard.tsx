@@ -20,6 +20,7 @@ export default function ProjectCard({ project, onClick }: { project: Project; on
         height={300}
         src={project.img}
         alt="Emelie_profile_picture"
+        style={{ height: "auto" }}
       />
       <div className="flex flex-col gap-3">
         <Link
