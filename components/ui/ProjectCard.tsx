@@ -6,7 +6,7 @@ import type { Project } from "@/types/ProjectType";
 
 export default function ProjectCard({ project, onClick }: { project: Project; onClick:() => void }) {
   return (
-    <div className="ProjectCard bg-lighter w-90 p-4 flex flex-col items-center h-full cursor-pointer hover:scale-102 transition-all" onClick={onClick}>
+    <div className="ProjectCard bg-lighter w-90 p-5 flex flex-col items-center h-full cursor-pointer hover:scale-102 transition-all" onClick={onClick}>
       <h2>{project.title}</h2>
       <div className="tags flex flex-wrap gap-2 mt-3 justify-center">
         {project.tags.map((tag) => (

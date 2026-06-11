@@ -6,6 +6,12 @@ import {
 
 export default function Header() {
   return (
+    <div className="relative">
+            <img
+        src="/images/svg/Streck2.svg"
+        alt="favicon"
+        className="object-contain h-[70px] w-[70px] absolute left-60 top-8 rotate-300"
+      />
     <div className="Header p-10 flex gap-10 items-center justify-center">
       <Image
         style={{ borderRadius: "43% 57% 32% 68% / 50% 60% 40% 50%" }}
@@ -36,6 +42,12 @@ export default function Header() {
           </a>
         </div>
       </div>
+    </div>
+          <img
+          src="/images/svg/Hand.svg"
+          alt="favicon"
+          className="object-contain h-[350px] w-[350px] absolute -bottom-18 -right-5 sway"
+        />
     </div>
   );
 }

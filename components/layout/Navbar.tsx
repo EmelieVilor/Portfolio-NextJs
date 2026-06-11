@@ -1,16 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="Navbar flex p-5 justify-between">
+    <div className="Navbar flex px-8 py-4 justify-between items-center">
       <Link href="/">
-        <Image
-          width={35}
-          height={35}
-          src="/images/favicon.png"
+        <img
+          src="/images/svg/Logga.svg"
           alt="favicon"
-          className="object-contain"
+          className="object-contain h-[75px] w-[75px]"
         />
       </Link>
 

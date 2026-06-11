@@ -4,13 +4,17 @@ import { useState } from "react";
 
 export default function EmailForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "", honeypot: ""});
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await fetch("/api/contact", {
       method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
     });
+    setSent(true);
+    setForm({ name: "", email: "", message: "", honeypot: "" });
   };
 
   return (
@@ -19,21 +23,21 @@ export default function EmailForm() {
         <div>
           <p>Name</p>
           <input
-            className="bg-lighter border-2 border-light mt-2 px-3 py-2 w-full text-[14px] font-mono tracking-wide"
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
+            className="bg-dark border-2 border-light mt-2 px-3 py-2 w-full text-[14px] font-mono tracking-wide"
+            onChange={(e) => setForm({ ...form, name: e.target.value })} required
           ></input>
         </div>
         <div>
           <p>E-mail</p>
           <input
-            className="bg-lighter border-2 border-light mt-2 px-3 py-2 w-full text-[14px] font-mono tracking-wide"
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
+            className="bg-dark border-2 border-light mt-2 px-3 py-2 w-full text-[14px] font-mono tracking-wide"
+            onChange={(e) => setForm({ ...form, email: e.target.value })} required
           ></input>
         </div>
         <div>
           <p>Message</p>
         <textarea
-          className="bg-lighter w-full border-2 border-light mt-2 px-3 py-2 h-40 text-[14px] font-mono tracking-wide"
+          className="bg-dark w-full border-2 border-light mt-2 px-3 py-2 h-40 text-[14px] font-mono tracking-wide"
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           placeholder="Write your message to me..."
         ></textarea>
@@ -45,6 +49,10 @@ export default function EmailForm() {
         >
           Send Message
         </button>
+
+      {sent && (
+        <p className="text-light text-center">Message sent! 🎉</p>
+      )}
       </form>
     </div>
   );

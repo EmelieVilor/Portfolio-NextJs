@@ -1,8 +1,8 @@
 export default function Skills() {
   return (
     <div
-      className="Skills bg-lighter p-10 flex gap-15 justify-center pt-40 w-screen"
-      style={{ clipPath: "polygon(0 30%, 100% 0, 100% 100%, 0 100%)" }}
+      className="Skills bg-lighter pt-40 flex gap-15 justify-center w-screen pb-20"
+      style={{ clipPath: "polygon(0 25%, 100% 0, 100% 100%, 0 100%)" }}
     >
       <div className="TechSkills">
         <h2 className="text-center">Tech Skills</h2>
