@@ -58,7 +58,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       summary: "Transitioning into a sustainable collaboration in the industrial harbor of Malmö. My master thesis project that I created in collaboration with Afry.",
       desc: "Assignment, Execution, Reflection.",
       screenshots: [],
-      downloadlink:"",
+      downloadlink:"/documents/Emelie_MasterThesis.pdf",
     },
     {
       id: "Bachelor",
@@ -68,7 +68,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       summary: "For my bachelor project in Interaction Design I wanted to explore tourism and gamification. Therefore, I designed a prototype that would encourage exploration and city interaciton.",
       desc: "Assignment, Execution, Reflection.",
       screenshots: [],
-      downloadlink:"",
+      downloadlink:"/documents/Emelie_BachelorThesis.pdf",
     },
   ];
 

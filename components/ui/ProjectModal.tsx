@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { XCircleIcon } from "@heroicons/react/16/solid";
+import { XCircleIcon, ArrowDownOnSquareIcon } from "@heroicons/react/16/solid";
 
 export default function ProjectModal({
   project,
@@ -71,7 +71,7 @@ export default function ProjectModal({
                 className="flex gap-2 items-center bg-lighter w-70 justify-center uppercase text-xs tracking-widest font-sans py-3 px-5 border-2 border-accent hover:text-dark hover:bg-accent transition-all"
                 href={project.downloadlink}
               >
-                GitHub <FontAwesomeIcon className="text-md" icon={faGithub} />
+                Download  <ArrowDownOnSquareIcon className="w-4 h-4" />
               </Link>
             )}
           </div>

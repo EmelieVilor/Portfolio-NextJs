@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import type { Project } from "@/types/ProjectType";
+import { ArrowDownOnSquareIcon } from "@heroicons/react/16/solid";
 
 export default function ProjectCard({
   project,
@@ -51,7 +52,7 @@ export default function ProjectCard({
             className="flex gap-2 items-center bg-accent w-70 justify-center uppercase text-xs tracking-widest font-sans py-3 px-5 border-2 border-accent hover:text-dark hover:bg-accent transition-all"
             href={project.downloadlink}
           >
-            GitHub <FontAwesomeIcon className="text-md" icon={faGithub} />
+            Download <ArrowDownOnSquareIcon className="w-4 h-4" />
           </Link>
         )}
       </div>
