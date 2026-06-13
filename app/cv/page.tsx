@@ -21,10 +21,10 @@ export default function CV() {
           className="object-contain h-[200px] w-[200px] -mt-18 -mb-25"
         />
         </div>
-      <div className="CV flex justify-center gap-15 p-10">
+      <div className="CV flex flex-col lg:flex-row justify-center gap-15 p-10">
         <div className="Experience bg-lighter text-center p-5 rotate-359">
           <h2 className="mb-2 flex items-center gap-3 justify-center"><BriefcaseIcon className="w-6 h-6"/>Experience</h2>
-          <div className="text-left flex flex-col gap-9 p-8 w-130 border-l-2 border-accent">
+          <div className="text-left flex flex-col gap-9 p-8 w-full lg:w-130 border-l-2 border-accent">
             <div>
               <h3 className="font-sans uppercase text-sm tracking-[2.5]">
                 Axis Communications
@@ -93,7 +93,7 @@ export default function CV() {
         </div>
         <div className="Education bg-lighter text-center p-5 rotate-1 mt-4">
           <h2 className="mb-2 flex items-center gap-3 justify-center"><AcademicCapIcon className="w-6 h-6"/> Education</h2>
-          <div className="text-left flex flex-col gap-10 p-8 w-130 border-l-2 border-accent">
+          <div className="text-left flex flex-col gap-10 p-8 w-full lg:w-130 border-l-2 border-accent">
             <div>
               <h3 className="font-sans uppercase text-sm tracking-[2.5]">
                 Frontend Development

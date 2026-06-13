@@ -21,7 +21,7 @@ export default function Projects() {
         <h2 className="text-center">Projects</h2>
         <h3 className="text-center mb-10">Mix of previous projects.</h3>
         </div>
-        <div className="grid grid-cols-3 gap-x-0 gap-y-10 justify-center items-stretch place-items-center mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-10 justify-center items-stretch place-items-center mx-auto">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

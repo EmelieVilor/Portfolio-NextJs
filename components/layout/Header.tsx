@@ -6,7 +6,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="Header p-10 flex gap-10 items-center justify-center relative">
+    <div className="Header p-15 flex flex-col gap-10 items-center justify-center relative lg:flex-row">
       <div className="relative inline-block">
         <img
           src="/images/svg/Streck2.svg"
@@ -23,12 +23,12 @@ export default function Header() {
           
         />
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 md:w-135">
         <h1 className="-mb-4">Emelie Vilör</h1>
         <h2 className="text-[19px]">Frontend developer & UX designer</h2>
         <div>
-          <p>Available for new opportunities to develop my knowledge.</p>
-          <p>Check out my previous projects or download my full CV below!</p>
+          <p>Available for new opportunities to develop my knowledge.
+          Check out my previous projects or download my full CV below!</p>
         </div>
         <div className="flex gap-5 mt-4">
           <a
@@ -49,7 +49,7 @@ export default function Header() {
       <img
         src="/images/svg/Hand.svg"
         alt="favicon"
-        className="object-contain h-[350px] w-[350px] absolute -bottom-[7vh] -right-[2vw] wave overflow-hidden"
+        className="hidden lg:block object-contain h-[350px] w-[350px] absolute -bottom-[7vh] -right-[2vw] wave overflow-hidden"
       />
     </div>
   );

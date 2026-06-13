@@ -1,13 +1,13 @@
 export default function Skills() {
   return (
     <div
-      className="Skills bg-lighter pt-45 pb-10 flex flex-col gap-10"
+      className="Skills bg-lighter pt-65 pb-10 flex flex-col gap-10 lg:pt-45 mx-auto"
       style={{ clipPath: "polygon(0 25%, 100% 0, 100% 100%, 0 100%)" }}
     >
-      <div className="flex gap-15 justify-center w-screen">
-        <div className="TechSkills">
+      <div className="flex flex-col lg:flex-row p-10 gap-15 justify-center items-center">
+        <div className="TechSkills w-full mx-auto">
           <h2 className="text-center">Tech Skills</h2>
-          <div className="Lines flex flex-col gap-2 w-130">
+          <div className="Lines flex flex-col gap-2 w-full md:w-130 mx-auto">
             <h3 className="mt-3">HTML / CSS</h3>
             <div className="line bg-dark h-2.5">
               <div className="progress bg-accent h-2.5 w-[95%] skills"></div>
@@ -30,11 +30,11 @@ export default function Skills() {
             </div>
           </div>
         </div>
-        <div className="KnowledgeAreas">
+        <div className="KnowledgeAreas w-full mx-auto">
           <h2 className="text-center">Knowledge Areas</h2>
-          <div className="Lines flex flex-col gap-2">
+          <div className="Lines flex flex-col gap-2 w-full md:w-130 mx-auto">
             <h3 className="mt-3">Web Development</h3>
-            <div className="line bg-dark h-2.5 w-130">
+            <div className="line bg-dark h-2.5 w-full">
               <div className="progress bg-accent h-2.5 w-[95%] skills"></div>
             </div>
             <h3 className="mt-3">App Development</h3>
@@ -56,10 +56,10 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center w-full">
         <h2 className="mb-3 mt-5">Additional Areas</h2>
         <div className="flex flex-col items-center gap-3">
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3 justify-center max-w-3xl">
           <p className="tags bg-tags py-2 px-5 rounded-3xl text-[12px]">
             NodeJs
           </p>
@@ -84,8 +84,6 @@ export default function Skills() {
           <p className="tags bg-tags py-2 px-5 rounded-3xl text-[12px]">
             Wordpress
           </p>
-          </div>
-          <div className="flex gap-3">
           <p className="tags bg-tags py-2 px-5 rounded-3xl text-[12px]">
             Service Design
           </p>

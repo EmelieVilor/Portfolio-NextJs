@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="About flex justify-center gap-8 items-center w-280 mx-auto h-screen">
+    <div className="About flex flex-col lg:flex-row justify-center items-center gap-7 mx-auto p-15">
+      <div className="flex justify-center">
       <div className="relative inline-block">
         <img
           src="/images/svg/Streck1.svg"
@@ -18,11 +19,12 @@ export default function About() {
           alt="Emelie_about_picture"
           className="object-contain"
         />
+        </div>
       </div>
       <div className="text-center relative">
         <h2>More About Me!</h2>
         <h3>Get to know me better.</h3>
-        <div className="border-l-2 border-accent pl-4 text-left mt-5 w-130">
+        <div className="border-l-2 border-accent pl-4 mb-35 text-left mt-5 w-full lg:w-130">
           <p>
             I have been interested in design and development in many different
             ways since high school, and completed my master's degree in
@@ -44,7 +46,7 @@ export default function About() {
           <img
             src="/images/svg/Dator.svg"
             alt="favicon"
-            className="object-contain h-[290px] w-[290px] absolute -right-[15vw] -bottom-[25vh] sway"
+            className="object-contain h-[290px] w-[290px] absolute -right-[15vw] -bottom-[20vh] sway"
           />
         </div>
       </div>
