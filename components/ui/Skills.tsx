@@ -14,11 +14,11 @@ export default function Skills() {
             </div>
             <h3 className="mt-3">JavaScript, TypeScript</h3>
             <div className="line bg-dark h-2.5">
-              <div className="progress bg-accent h-2.5 w-[85%] skills"></div>
+              <div className="progress bg-accent h-2.5 w-[89%] skills"></div>
             </div>
             <h3 className="mt-3">React</h3>
             <div className="line bg-dark h-2.5">
-              <div className="progress bg-accent h-2.5 w-[80%] skills"></div>
+              <div className="progress bg-accent h-2.5 w-[83%] skills"></div>
             </div>
             <h3 className="mt-3">NextJS</h3>
             <div className="line bg-dark h-2.5">
@@ -26,7 +26,7 @@ export default function Skills() {
             </div>
             <h3 className="mt-3">Figma, Adobe CS</h3>
             <div className="line bg-dark h-2.5">
-              <div className="progress bg-accent h-2.5 w-[82%] skills"></div>
+              <div className="progress bg-accent h-2.5 w-[92%] skills"></div>
             </div>
           </div>
         </div>
