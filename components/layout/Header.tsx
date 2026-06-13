@@ -16,8 +16,8 @@ export default function Header() {
         <Image
         priority
           style={{ borderRadius: "43% 57% 32% 68% / 50% 60% 40% 50%" }}
-          width={350}
-          height={350}
+          width={320}
+          height={320}
           src="/images/profilepictures/4.jpg"
           alt="Emelie_profile_picture"
           
