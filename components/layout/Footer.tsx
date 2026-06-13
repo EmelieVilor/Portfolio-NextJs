@@ -16,7 +16,7 @@ const today = new Date();
           <div className="flex gap-2 justify-center items-center mt-4">
           <a href="https://github.com/EmelieVilor"><FontAwesomeIcon className="text-lg hover:scale-110 transition-all" icon={faGithub} /></a>
           <a href="https://www.linkedin.com/in/emelie-vilor/"><FontAwesomeIcon className="text-lg hover:scale-110 transition-all" icon={faLinkedin} /></a>
-          <a href="email@email.com"><FontAwesomeIcon className="text-lg hover:scale-110 transition-all" icon={faEnvelope} /></a>
+          <a href="mailto:emelie.vilor@gmail.com"><FontAwesomeIcon className="text-lg hover:scale-110 transition-all" icon={faEnvelope} /></a>
         </div>
     </div>
   );
