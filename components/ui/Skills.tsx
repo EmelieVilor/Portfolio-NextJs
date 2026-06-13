@@ -1,8 +1,7 @@
 export default function Skills() {
   return (
     <div
-      className="Skills bg-lighter pt-65 pb-10 flex flex-col gap-10 lg:pt-45 mx-auto"
-      style={{ clipPath: "polygon(0 25%, 100% 0, 100% 100%, 0 100%)" }}
+      className="Skills bg-lighter pt-25 lg:pt-45 pb-10 flex flex-col gap-10 [clip-path:polygon(0_8%,100%_0,100%_100%,0_100%)] lg:[clip-path:polygon(0_20%,100%_0,100%_100%,0_100%)]"
     >
       <div className="flex flex-col lg:flex-row p-10 gap-15 justify-center items-center">
         <div className="TechSkills w-full mx-auto">

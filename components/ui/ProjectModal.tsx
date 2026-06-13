@@ -31,7 +31,7 @@ export default function ProjectModal({
               </p>
             ))}
           </div>
-          <div className="Summary flex justify-center items-center">
+          <div className="Summary flex flex-col lg:flex-row justify-center items-center border-b-2 border-tags pb-5">
             <Image
               width={440}
               height={440}
@@ -43,9 +43,9 @@ export default function ProjectModal({
             </div>
           </div>
           <div className="flex flex-col justify-center items-center gap-8 text-center">
-            <div className="flex gap-5 items-center">
-              <p className="whitespace-pre-line">{project.desc}</p>
-              <div className="flex flex-col gap-1">
+            <div className="flex flex-col lg:flex-row mt-10 gap-5 items-center p-5">
+              <p className="whitespace-pre-line w-full lg:w-200">{project.desc}</p>
+              <div className="flex flex-col gap-2">
                 {project.screenshots.map((img, index) => (
                   <Image
                     key={index}
