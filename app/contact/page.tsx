@@ -7,8 +7,8 @@ export default function Contact() {
       <Image
         priority
         style={{ borderRadius: "59% 41% 64% 36% / 52% 47% 53% 48% " }}
-        width={350}
-        height={350}
+        width={320}
+        height={320}
         className="object-contain"
         src="/images/profilepictures/bild4_svartvit.jpg"
         alt="Emelie_contact_picture"

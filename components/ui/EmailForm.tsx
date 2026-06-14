@@ -19,7 +19,7 @@ export default function EmailForm() {
 
   return (
     <div className="EmailForm mt-5">
-      <form className="flex flex-col gap-4 w-110" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-4 w-full lg:w-110" onSubmit={handleSubmit}>
         <div>
           <p>Name</p>
           <input

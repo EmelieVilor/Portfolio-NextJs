@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="About flex flex-col lg:flex-row justify-center items-center gap-7 mx-auto p-15">
+    <div className="About flex flex-col lg:flex-row justify-center items-center gap-7 mx-auto p-8 lg:p-15">
       <div className="flex justify-center">
       <div className="relative inline-block">
         <img
