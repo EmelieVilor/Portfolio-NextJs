@@ -42,7 +42,7 @@ export default function ProjectModal({
           </div>
           <div className="flex flex-col justify-center items-center gap-8 text-center">
             <div className="flex flex-col lg:flex-row mt-10 gap-5 items-center p-5">
-              <p className="whitespace-pre-line w-full lg:w-200">{project.desc}</p>
+              <p className="whitespace-pre-line w-full text-left lg:w-200">{project.desc}</p>
               <div className="flex flex-col gap-2">
                 {project.screenshots.map((img, index) => (
                   <Image

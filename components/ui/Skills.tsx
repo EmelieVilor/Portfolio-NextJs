@@ -19,7 +19,7 @@ export default function Skills() {
             <div className="line bg-dark h-2.5">
               <div className="progress bg-accent h-2.5 w-[83%] skills"></div>
             </div>
-            <h3 className="mt-3">NextJS</h3>
+            <h3 className="mt-3">NextJs</h3>
             <div className="line bg-dark h-2.5">
               <div className="progress bg-accent h-2.5 w-[75%] skills"></div>
             </div>
@@ -59,6 +59,9 @@ export default function Skills() {
         <h2 className="mb-3 mt-5">Additional Areas</h2>
         <div className="flex flex-col items-center gap-3">
           <div className="flex flex-wrap gap-3 justify-center max-w-3xl">
+            <p className="tags bg-tags py-2 px-5 rounded-3xl text-[12px]">
+            Tailwind CSS
+          </p>
           <p className="tags bg-tags py-2 px-5 rounded-3xl text-[12px]">
             NodeJs
           </p>

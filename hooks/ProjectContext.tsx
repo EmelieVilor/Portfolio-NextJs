@@ -12,10 +12,10 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       id: "AlienPlanets",
       img: "/images/aliensplanets_start.png",
       title: "Alien Planets",
-      tags: ["Full-stack", "React", "Tailwind CSS", "TypeScript"],
+      tags: ["Full-stack", "React", "NodeJs", "TypeScript",  "MySQL", "Tailwind"],
       summary:
         "Full-stack application for exploring different kinds of planets and their inhabitants. \n\n Executed through an agile teamwork of 5 people.",
-      desc: "Assignment, Execution, Reflection.",
+      desc: "This project was built as part of a course in agile development within the Frontend Developer program at Yrkeshögskolan Borås. The purpose was to simulate working as an agile team. We planned and ran sprints, held standups, sprint reviews and retrospectives and incrementally delivered our MVP.\n\n With this web app the user can view all kinds of planets and aliens, learn the details of each one and use the filter system and filter each category by size, habitat, home planet and aggression etc.\n\n See screenshots and Github code for more information.",
       screenshots: [
         "/images/aliensframe1.png",
         "/images/aliensframe2.png",
@@ -39,10 +39,10 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       id: "Kanban",
       img: "/images/kanban_transmockup.png",
       title: "Kanban Board",
-      tags: ["Frontend", "React", "JavaScript", "CSS"],
+      tags: ["Frontend", "React", "Vite", "JavaScript", "CSS"],
       summary:
         "A Kanban board created in React. The user can add or delete tasks, organize them with a category of choice, use drag-and-drop to move the tasks to other columns of the board and view specific details of each existing task.",
-      desc: "Assignment, Execution, Reflection.",
+      desc: "[More information coming...] \n\n See screenshots and Github code for more.",
       screenshots: [
         "/images/kanban1.png",
         "/images/kanban2.png",
@@ -54,10 +54,10 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       id: "Dashboard",
       img: "/images/dashboard_transpmockup.png",
       title: "Dashboard",
-      tags: ["Frontend", "HTML", "CSS", "Vanilla JS", "API-handling"],
+      tags: ["Frontend", "HTML", "CSS", "JavaScript", "API-handling"],
       summary:
         "This dashboard is a customizable site for each user. The user can add and save links of their choice, write personal notes, watch the local weather forecast and view current news articles.",
-      desc: "Assignment, Execution, Reflection.",
+      desc: "[More information coming...] \n\n See screenshots and Github code for more.",
       screenshots: [
         "/images/Dashboard1.png",
         "/images/Dashboard2.png",
@@ -72,7 +72,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       tags: ["Transition Design", "UX", "UI", "User Research", "Figma"],
       summary:
         "Transitioning into a sustainable collaboration in the industrial harbor of Malmö. My master thesis project that I created in collaboration with Afry.",
-      desc: "Assignment, Execution, Reflection.",
+      desc: "[More information coming...] \n\n See screenshots or download the full thesis for more.",
       screenshots: ["/images/2.png", "/images/3.png", "/images/5.png"],
       downloadlink: "/documents/Emelie_MasterThesis.pdf",
     },
@@ -83,7 +83,7 @@ export function ProjectProvider({ children }: { children: ReactNode }) {
       tags: ["Interaction Design", "UX", "Gamification", "JustInMind"],
       summary:
         "For my bachelor project in Interaction Design I wanted to explore tourism and gamification. Therefore, I designed a prototype that would encourage exploration and city interaciton.",
-      desc: "Assignment, Execution, Reflection.",
+      desc: "[More information coming...] \n\n See screenshots or download the full thesis for more.",
       screenshots: [
         "/images/ScreensBACHELORTHESIS.png",
         "/images/bachelor_test.jpg",
