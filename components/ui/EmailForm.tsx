@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default function EmailForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "", honeypot: ""});
@@ -39,7 +41,7 @@ export default function EmailForm() {
         <textarea
           className="bg-dark w-full border-2 border-light mt-2 px-3 py-2 h-40 text-[14px] font-mono tracking-wide"
           onChange={(e) => setForm({ ...form, message: e.target.value })}
-          placeholder="Write your message to me..."
+          placeholder="Say hello..."
         ></textarea>
         </div>
         <input className="honeypot hidden" onChange={(e) => setForm({ ...form, honeypot: e.target.value })}></input>
@@ -51,7 +53,7 @@ export default function EmailForm() {
         </button>
 
       {sent && (
-        <p className="text-light text-center">Message sent! 🎉</p>
+        <p className="text-light text-center">Message sent! <FontAwesomeIcon icon={faEnvelopeCircleCheck}/></p>
       )}
       </form>
     </div>
