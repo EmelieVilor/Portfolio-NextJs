@@ -6,7 +6,7 @@ export default function Skills() {
       <div className="flex flex-col lg:flex-row p-10 gap-15 justify-center items-center">
         <div className="TechSkills w-full mx-auto">
           <h2 className="text-center">Tech Skills</h2>
-          <div className="Lines flex flex-col gap-2 w-full md:w-130 mx-auto">
+          <div className="Lines flex flex-col gap-2 w-full md:w-150 mx-auto">
             <h3 className="mt-3">HTML / CSS</h3>
             <div className="line bg-dark h-2.5">
               <div className="progress bg-accent h-2.5 w-[95%] skills"></div>
@@ -31,7 +31,7 @@ export default function Skills() {
         </div>
         <div className="KnowledgeAreas w-full mx-auto">
           <h2 className="text-center">Knowledge Areas</h2>
-          <div className="Lines flex flex-col gap-2 w-full md:w-130 mx-auto">
+          <div className="Lines flex flex-col gap-2 w-full md:w-150 mx-auto">
             <h3 className="mt-3">Web Development</h3>
             <div className="line bg-dark h-2.5 w-full">
               <div className="progress bg-accent h-2.5 w-[95%] skills"></div>
