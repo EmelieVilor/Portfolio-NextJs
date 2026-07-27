@@ -3,7 +3,7 @@ export default function Skills() {
     <div
       className="Skills bg-lighter pt-25 lg:pt-45 pb-10 flex flex-col gap-10 [clip-path:polygon(0_8%,100%_0,100%_100%,0_100%)] lg:[clip-path:polygon(0_20%,100%_0,100%_100%,0_100%)]"
     >
-      <div className="flex flex-col lg:flex-row p-10 gap-15 justify-center items-center">
+      <div className="flex flex-col lg:flex-row p-10 gap-15 justify-center items-center lg:w-300 lg:mx-auto">
         <div className="TechSkills w-full mx-auto">
           <h2 className="text-center">Tech Skills</h2>
           <div className="Lines flex flex-col gap-2 w-full md:w-150 mx-auto">
