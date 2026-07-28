@@ -24,7 +24,7 @@ export default function Header() {
         />
       </div>
       <div className="flex flex-col gap-2 w-83 md:w-135 text-center md:text-left">
-        <h1 className="lg:-mb-4 text-[42px] lg:text-[59px] lg:mb-2">Emelie Vilör</h1>
+        <h1 className="lg:-mb-4 -mb-2 text-[42px] lg:text-[59px]">Emelie Vilör</h1>
         <h2 className="text-[20px]">Frontend developer & UX designer</h2>
         <div>
           <p>Available for new opportunities to develop my knowledge.
