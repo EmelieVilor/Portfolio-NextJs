@@ -24,22 +24,6 @@ export default function About() {
       <div className="text-center relative w-150">
         <h2>More About Me!</h2>
         <h3>Get to know me better.</h3>
-        {/* <div className="flex flex-wrap justify-center gap-2 items-center mt-5 mb-7 max-w-full">
-          <div className="flex justify-center items-center gap-2 bg-lighter py-2 px-5 rounded-3xl">
-            <p className="text-accent text-[12px]">Location:</p>
-            <p className="text-[12px]">Malmö</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 bg-lighter py-2 px-5 rounded-3xl">
-            <p className="text-accent text-[12px]">Age:</p>
-            <p className="text-[12px]">35</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 bg-lighter py-2 px-5 rounded-3xl">
-            <p className="text-accent text-[12px]">Coffee powered</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 bg-lighter py-2 px-5 rounded-3xl">
-            <p className="text-accent text-[12px]">Audio-book listener</p>
-          </div>
-        </div> */}
         <div className="border-l-2 border-accent pl-4 mb-35 text-left mt-5 w-full lg:w-150">
           <p>
             I have been interested in design and development in many different
