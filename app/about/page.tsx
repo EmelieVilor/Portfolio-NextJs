@@ -21,7 +21,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="text-center relative w-150">
+      <div className="text-center relative">
         <h2>More About Me!</h2>
         <h3>Get to know me better.</h3>
         <div className="border-l-2 border-accent pl-4 mb-35 text-left mt-5 w-full lg:w-150">
@@ -39,10 +39,9 @@ export default function About() {
             design and web development is the ability to design and build useful
             products and services that can inspire behavioral change. <br />
             <br />
-            Born and raised in Malmö, Sweden, and that is where I live with my
+            Based in Malmö, Sweden where I live with my
             wife and our two children. In my spare time I like to meet with
-            friends and family, play board games or hunt for fun home decor at
-            Facebook Marketplace.
+            friends and family, play board games or go swimming.
           </p>
           <img
             src="/images/svg/Dator.svg"
